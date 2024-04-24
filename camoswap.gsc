@@ -16,13 +16,13 @@ onplayerpressed(){
     self endon( "disconnect" );
     level endon( "game_ended" );
     for(;;){
-        wait 0.05;
         if(self useButtonPressed()){
             self camoswap();
             while(self useButtonPressed()){ 
                 wait 2; 
             }
         }
+        wait 0.05;
     }
 }
 
